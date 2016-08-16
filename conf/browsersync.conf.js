@@ -28,6 +28,7 @@ module.exports = function () {
         webpackHotMiddleware(webpackBundler)
       ]
     },
+    host: '0.0.0.0',
     open: false
   };
 };

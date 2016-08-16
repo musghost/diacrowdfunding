@@ -10,6 +10,7 @@ import {Projects} from './app/projects/projects';
 import {Cases} from './app/cases/cases';
 import {Upload} from './app/upload/upload';
 import {Contact} from './app/contact/contact';
+import {Training} from './app/training/training';
 import {Platforms} from './app/platforms/platforms';
 
 import './index.scss';
@@ -21,6 +22,7 @@ ReactDOM.render(
     <Route path="/cases" component={Cases}/>
     <Route path="/upload" component={Upload}/>
     <Route path="/contact" component={Contact}/>
+    <Route path="/training" component={Training}/>
     <Route path="/platforms" component={Platforms}/>
   </Router>,
   document.getElementById('root')

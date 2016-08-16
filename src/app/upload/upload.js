@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Header} from './../header';
-import {Home} from './../home/home';
 import {Footer} from './../footer';
 
 const styles = {
@@ -26,11 +25,16 @@ export class Upload extends Component {
                 </div>
               </div>
               <div className="col-sm-6 image-upload" style={styles.image}>
-                <img src="assets/uploads/uploads.jpg" />
+                <img src="assets/uploads/uploads.jpg"/>
               </div>
             </div>
           </div>
         </div>
+        <section id="sponsors">
+          <div className="container">
+            <img src="assets/home/sponsors.jpg"/>
+          </div>
+        </section>
         <Footer/>
       </div>
     );

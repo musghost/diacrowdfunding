@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Header} from './header';
-import {Title} from './title';
 import {Home} from './home/home';
 import {Footer} from './footer';
 
@@ -22,7 +21,7 @@ export class Main extends Component {
     return (
       <div style={styles.container}>
         <Header/>
-        <Home />
+        <Home/>
         <Footer/>
       </div>
     );

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 export class Header extends Component {
   render() {
@@ -13,67 +14,32 @@ export class Header extends Component {
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </button>
-              <a className="navbar-brand" href="#">
-                <img src="assets/diacrowdfunding.png" />
-              </a>
+              <Link to={'/'} className="navbar-brand">
+                <img src="assets/diacrowdfunding.png"/>
+              </Link>
             </div>
 
             <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul className="nav navbar-nav navbar-right">
-                <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proyectos <span className="fa fa-angle-down"></span></a>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" className="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
+                <li>
+                  <Link to={'/projects'}>Proyectos <span className="fa fa-angle-down"></span></Link>
                 </li>
-                <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Casos de éxito <span className="fa fa-angle-down"></span></a>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" className="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
+                <li>
+                  <Link to={'/cases'}>Casos de éxito <span className="fa fa-angle-down"></span></Link>
                 </li>
-                <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sube un proyecto <span className="fa fa-angle-down"></span></a>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" className="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
+                <li>
+                  <Link to={'/upload'}>Sube un proyecto <span className="fa fa-angle-down"></span></Link>
                 </li>
-                <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contacto <span className="fa fa-angle-down"></span></a>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" className="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
+                <li>
+                  <Link to={'/contact'}>Contacto <span className="fa fa-angle-down"></span></Link>
                 </li>
-                <li className="dropdown">
-                  <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Capacitación <span className="fa fa-angle-down"></span></a>
-                  <ul className="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" className="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                  </ul>
+                <li>
+                  <Link to={'/training'}>Capacitación <span className="fa fa-angle-down"></span></Link>
                 </li>
                 <li className="platforms">
-                  <a href="#">
+                  <Link to={'/platforms'}>
                     <span>Plataformas</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

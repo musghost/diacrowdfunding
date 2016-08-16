@@ -22,3 +22,11 @@ export class Project extends Component {
     );
   }
 }
+
+Project.propTypes = {
+  content: React.PropTypes.object,
+  url: React.PropTypes.string,
+  link: React.PropTypes.string,
+  text: React.PropTypes.node,
+  style: React.PropTypes.object
+};

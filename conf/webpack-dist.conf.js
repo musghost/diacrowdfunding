@@ -29,6 +29,18 @@ module.exports = {
         loaders: ExtractTextPlugin.extract('style', 'css?minimize!sass', 'postcss')
       },
       {
+        test: /\.(png|jpg|jpeg|gif|svg|woff)$/,
+        loader: 'url-loader?limit=10000',
+      },
+      {
+        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader',
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+        loader: 'file-loader',
+      },
+      {
         test: /\.js$/,
         exclude: /node_modules/,
         loaders: [
@@ -39,6 +51,11 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }),
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html'),
@@ -61,7 +78,9 @@ module.exports = {
     path: path.join(process.cwd(), conf.paths.dist),
     filename: '[name]-[hash].js'
   },
-  entry: {
-    app: `./${conf.path.src('index')}`
-  }
+  entry: [
+    'font-awesome-loader',
+    'bootstrap-loader/extractStyles',
+    `./${conf.path.src('index')}`
+  ]
 };

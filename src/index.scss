@@ -48,6 +48,15 @@ header {
           padding-top: 41px;
           padding-bottom: 41px;
           transition: all 0.5s ease;
+          @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 12px;
+          }
+
+          @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+          }
 
           &:hover, &:active {
             color: $purple;
@@ -64,8 +73,13 @@ header {
 }
 
 #principal {
-  margin-top: 100px;
+  margin-top: 120px;
+  margin-bottom: 30px;
   font-family: 'Varela Round', sans-serif;
+
+  .principal {
+    padding-left: 0;
+  }
 
   & > .row {
     margin: 0;
@@ -93,8 +107,12 @@ header {
     letter-spacing: 1px;
     font-size: 12px;
     font-weight: 400;
-    max-width: 70%;
+    max-width: 80%;
     line-height: 23px;
+  }
+
+  .invest-buttons {
+    margin-top: 40px;
   }
 
   .invest, .tag {
@@ -245,6 +263,9 @@ header {
     color: $purple;
     font-size: 55px;
     margin-bottom: 30px;
+    @media (max-width: 480px) {
+      font-size: 40px;
+    }
   }
 
   p {
@@ -316,6 +337,10 @@ header {
     }
   }
 
+  button {
+    opacity: 0;
+  }
+
   form {
     img {
       opacity: 0;
@@ -330,6 +355,7 @@ header {
 
   & > .row {
     margin: 0;
+    margin-bottom: 20px;
   }
 
   .project {
@@ -496,6 +522,12 @@ footer {
     position: center bottom;
   }
 
+  @media (max-width: 480px) {
+    br {
+      display: none;
+    }
+  }
+
   h3 {
     font-size: 17px;
     line-height: 25px;
@@ -525,6 +557,7 @@ footer {
     margin-bottom: 12px;
     font-size: 25px;
     color: #453e3a;
+    margin-right: 20px;
 
     &:first-child {
       margin-top: 20px;
@@ -799,4 +832,13 @@ footer {
     display: inline-block;
     max-width: 100%;
   }
+}
+
+#sponsors {
+  background: #ebebeb;
+  margin-top: 20px;
+}
+
+.super-big-text {
+  margin: 100px 0 500px
 }

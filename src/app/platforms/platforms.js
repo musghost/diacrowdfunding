@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Header} from './../header';
-import {Home} from './../home/home';
 import {Footer} from './../footer';
 import {Platform} from './platform.js';
 
@@ -120,42 +119,42 @@ const platforms = [
 
 export class Platforms extends Component {
   render() {
-    let row1 = platforms[0].map(platform => {
+    let row1 = platforms[0].map((platform, xi) => {
       return (
-        <div className="col-sm-3">
-          <Platform {...platform} />
+        <div className="col-md-3 col-sm-6" key={xi}>
+          <Platform {...platform}/>
         </div>
       );
     });
 
-    let row2 = platforms[1].map(platform => {
+    let row2 = platforms[1].map((platform, xi) => {
       return (
-        <div className="col-sm-3">
-          <Platform {...platform} />
+        <div className="col-md-3 col-sm-6" key={xi}>
+          <Platform {...platform}/>
         </div>
       );
     });
 
-    let row3 = platforms[2].map(platform => {
+    let row3 = platforms[2].map((platform, xi) => {
       return (
-        <div className="col-sm-3">
-          <Platform {...platform} />
+        <div className="col-md-3 col-sm-6" key={xi}>
+          <Platform {...platform}/>
         </div>
       );
     });
 
-    let row4 = platforms[3].map(platform => {
+    let row4 = platforms[3].map((platform, xi) => {
       return (
-        <div className="col-sm-3">
-          <Platform {...platform} />
+        <div className="col-md-3 col-sm-6" key={xi}>
+          <Platform {...platform}/>
         </div>
       );
     });
-    
-    let row5 = platforms[4].map(platform => {
+
+    let row5 = platforms[4].map((platform, xi) => {
       return (
-        <div className="col-sm-3">
-          <Platform {...platform} />
+        <div className="col-md-3 col-sm-6" key={xi}>
+          <Platform {...platform}/>
         </div>
       );
     });
@@ -180,6 +179,11 @@ export class Platforms extends Component {
             {row5}
           </div>
         </div>
+        <section id="sponsors">
+          <div className="container">
+            <img src="assets/home/sponsors.jpg"/>
+          </div>
+        </section>
         <Footer/>
       </div>
     );
