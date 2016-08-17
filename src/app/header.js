@@ -34,7 +34,7 @@ export class Header extends Component {
                   <Link to={'/contact'}>Contacto <span className="fa fa-angle-down"></span></Link>
                 </li>
                 <li>
-                  <Link to={'/training'}>Capacitación <span className="fa fa-angle-down"></span></Link>
+                  <Link to={'/training'}>Patrocinadores <span className="fa fa-angle-down"></span></Link>
                 </li>
                 <li className="platforms">
                   <Link to={'/platforms'}>
