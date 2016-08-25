@@ -16,7 +16,7 @@ export class Training extends Component {
                   <div className="image">
                     <img src="assets/contact/patrocinadores.png"/>
                     <a href="http://www.crowdfundingmexico.mx/images/Home/crowdfunding.mp4" target="_blank">
-                        <i className="fa fa-play" aria-hidden="true"></i>
+                      <i className="fa fa-play" aria-hidden="true"></i>
                     </a>
                   </div>
                 </div>
@@ -26,9 +26,9 @@ export class Training extends Component {
                   <br/>
                   <p>El proyecto prevé que se operen diversos cambios en el comportamiento de los empresarios y las MIPYME. Las actividades educativas y promocionales, aunadas a la elaboración y diseminación de materiales didácticos pertinentes, fomentarán el uso de las plataformas de financiamiento colectivo entre los empresarios y los microinversionistas.</p>
                   <div>
-                  <a href="http://www.crowdfundingmexico.mx/" target="_blank">
-                    <button>Ir al sitio</button>
-                  </a>
+                    <a href="http://www.crowdfundingmexico.mx/" target="_blank">
+                      <button>Ir al sitio</button>
+                    </a>
                   </div>
                 </div>
               </div>

@@ -2,7 +2,7 @@ import 'babel-polyfill';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route, browserHistory} from 'react-router';
+import {Router, Route, hashHistory} from 'react-router';
 
 import {Main} from './app/main';
 
@@ -15,8 +15,12 @@ import {Platforms} from './app/platforms/platforms';
 
 import './index.scss';
 
+const handleUpdate = () => {
+  window.scrollTo(0, 0);
+};
+
 ReactDOM.render(
-  <Router history={browserHistory}>
+  <Router history={hashHistory} queryKey={false} onUpdate={handleUpdate}>
     <Route path="/" component={Main}/>
     <Route path="/projects" component={Projects}/>
     <Route path="/cases" component={Cases}/>

@@ -65,7 +65,7 @@ export class Contact extends Component {
                   </form>
                 </div>
               </div>
-              <div className="col-sm-6 image-upload" style={styles.image}>
+              <div className="col-sm-6 image-upload hidden-xs hidden-sm" style={styles.image}>
                 <img src="assets/contact/contact.jpg"/>
               </div>
             </div>

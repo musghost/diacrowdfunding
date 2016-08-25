@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router';
 
 const styles = {
   benefits: {
@@ -56,7 +57,7 @@ export class Home extends Component {
                   <span className="invest">¡INVIERTE HOY!</span>&nbsp;<span className="tag">#DíaCrowdfundingMX</span>
                 </div>
                 <div className="pull-right">
-                  <a href="#" className="anchor-projects">VER PROYECTOS</a>
+                  <Link to={'/projects'} className="anchor-projects">VER PROYECTOS</Link>
                 </div>
               </div>
             </div>

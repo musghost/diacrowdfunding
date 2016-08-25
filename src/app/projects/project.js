@@ -10,7 +10,7 @@ export class Project extends Component {
           <div className="text-center clearfix"><span></span></div>
           {this.props.content.text}
         </div>
-        <a href={this.props.url} target="_blank" className="link">Ir a: yotepresto</a>
+        <a href={this.props.url} target="_blank" className="link">Ir a: {this.props.content.title}</a>
         <div className="subpicture">
           <div className="clearfix">
             <a href={this.props.url} className="pull-right">{this.props.link}</a>
