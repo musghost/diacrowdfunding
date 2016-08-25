@@ -68,7 +68,7 @@ export class Home extends Component {
             <div className="col-md-6 crowdfunding">
               <div>
                 <h1>¿Qué es el<br/>crowdfunding?</h1>
-                <p>UNA FORMA DE FINANCIACIÓN ALTERNATIVA, QUE CONSISTE EN LA DIFUSIÓN PÚBLICA DE UN PROYECTO, CAUSA O NEGOCIÓ, Y EN EL FINANCIAMIENTO POR PARTE DE UN GRUPO DE INVERSIONISTAS O PRESTAMISTAS.</p>
+                <p>UNA FORMA DE FINANCIACIÓN ALTERNATIVA, QUE CONSISTE EN LA DIFUSIÓN PÚBLICA DE UN PROYECTO, CAUSA O NEGOCIO, Y EN EL FINANCIAMIENTO POR PARTE DE UN GRUPO DE INVERSIONISTAS O PRESTAMISTAS.</p>
                 <p className="secondary">A cambio, una compensación económica o la satisfacción de apoyar una causa.</p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export class Home extends Component {
                 <h2>Fondeo de deuda:</h2>
                 <p>Los inversionistas reciben su dinero de vuelta con intereses, en este tipo de crowdfunding, no se tiene una parte de la empresa.</p>
                 <h2>Equity crowdfunding:</h2>
-                <p>Se invierte en una empresa o idea en cambio de una parte de las acciones de la compañía o proyecto.</p>
+                <p>Se invierte en una empresa o idea a cambio de una parte de las acciones de la compañía o proyecto.</p>
                 <h2>Recompensa:</h2>
                 <p>Se invierte en un proyecto o idea a cambio de una recompensa, generalmente material.</p>
               </div>
@@ -161,7 +161,7 @@ export class Home extends Component {
                 <div className="image" style={styles.projects.project1}></div>
                 <div className="subpicture">
                   <div className="clearfix">
-                    <a href="#" className="pull-right">Salud</a>
+                    <a href="https://fondify.mx/Moonki" className="pull-right" target="_blank">Salud</a>
                   </div>
                   <p><strong>Moonki: </strong>Wearable pensado para ayudar a mamás en la tarea de cuidar a sus pequeños.</p>
                 </div>
@@ -172,7 +172,7 @@ export class Home extends Component {
                 <div className="image" style={styles.projects.project2}></div>
                 <div className="subpicture">
                   <div className="clearfix">
-                    <a href="#" className="pull-right">Tecnología</a>
+                    <a href="https://playbusiness.mx/startups/modula/snapshot" className="pull-right" target="_blank">Tecnología</a>
                   </div>
                   <p><strong>Modula: </strong>Drone personalizable, capaz de solucionar problemas profesionales.</p>
                 </div>
@@ -183,7 +183,7 @@ export class Home extends Component {
                 <div className="image" style={styles.projects.project3}></div>
                 <div className="subpicture">
                   <div className="clearfix">
-                    <a href="#" className="pull-right">Desarrollo inmobiliario</a>
+                    <a href="http://expansive.mx/cruz-verde-188/" className="pull-right" target="_blank">Desarrollo inmobiliario</a>
                   </div>
                   <p><strong>Cruz Verde 188: </strong>Construcción de una casa de segmento alto con vista arbolada a barranca. CDMX.</p>
                 </div>
@@ -194,7 +194,7 @@ export class Home extends Component {
                 <div className="image" style={styles.projects.project4}></div>
                 <div className="subpicture">
                   <div className="clearfix">
-                    <a href="#" className="pull-right">Salud / Moda</a>
+                    <a href="https://playbusiness.mx/startups/leco/snapshot" className="pull-right" target="_blank">Salud / Moda</a>
                   </div>
                   <p><strong>LECO: </strong>Marca omnicanal que transforma la experiencia de consumir moda y salud visual.</p>
                 </div>
