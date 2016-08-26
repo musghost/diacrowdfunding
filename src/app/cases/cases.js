@@ -30,7 +30,7 @@ const cases = [
   },
   {
     project: 'Ayúdame a Sonreír ante el Cáncer',
-    url: 'https://youtu.be/n5YqHPQKKA4',
+    url: 'https://hipgive.org/es/project/color-your-hospital-with-smiles/',
     type: 'Salud',
     via: 'HipGive',
     image: 'assets/cases/ayudameasonreir.jpg',
@@ -70,11 +70,11 @@ const cases = [
   },
   {
     project: 'Voces Mesoamericanas Acción con Pueblos Migrantes A.C.',
-    url: 'https://youtu.be/fGcBYQFbxwY',
+    url: 'https://hipgive.org/es/project/education-for-dreamers/',
     type: 'Proyecto social',
     via: 'HipGive',
     image: 'assets/cases/voces.jpeg',
-    text: 'El 1ro de febrero el Museo Migrante visitó la comunidad de Poconichim'
+    text: 'Un fondo de becas en apoyo a jóvenes “Soñadores” migrantes que han retornado a sus comunidades de origen y desean continuar sus estudios.'
   },
   {
     project: 'Samaya',
