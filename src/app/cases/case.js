@@ -8,7 +8,7 @@ export class Case extends Component {
           <div className="col-sm-6">
             <div className="image">
               <img src={this.props.image}/>
-              <a href={this.props.url} target="_blank">
+              <a href={this.props.link} target="_blank">
                 <i className="fa fa-play" aria-hidden="true"></i>
               </a>
             </div>
@@ -16,9 +16,9 @@ export class Case extends Component {
           <div className="col-sm-6">
             <h1>{this.props.project}</h1>
             <h4>{this.props.type}</h4>
-            <p>{this.props.text} </p>
+            <p>{this.props.description} </p>
             <div>
-              <a href={this.props.url} target="_blank">
+              <a href={this.props.link} target="_blank">
                 <button>Ver Proyecto</button>
               </a>
             </div>
@@ -35,8 +35,8 @@ export class Case extends Component {
 Case.propTypes = {
   project: React.PropTypes.string,
   type: React.PropTypes.string,
-  url: React.PropTypes.string,
-  text: React.PropTypes.string,
+  link: React.PropTypes.string,
+  description: React.PropTypes.string,
   via: React.PropTypes.string,
   image: React.PropTypes.string
 };

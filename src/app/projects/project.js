@@ -2,31 +2,37 @@ import React, {Component} from 'react';
 
 export class Project extends Component {
   render() {
+    const style = {
+      backgroundImage: `url(${this.props.image})`
+    };
+
     return (
       <div className="project">
         <div className="mask">
-          <h2>{this.props.content.title}</h2>
-          <h5>{this.props.content.tag}</h5>
+          <h2>{this.props.name}</h2>
+          <h5>{this.props.type}</h5>
           <div className="text-center clearfix"><span></span></div>
-          {this.props.content.text}
+          <div>
+            <p>{this.props.description}</p>
+          </div>
         </div>
-        <a href={this.props.url} target="_blank" className="link">Ir a: {this.props.content.title}</a>
+        <a href={this.props.link} target="_blank" className="link">Ir a: {this.props.name}</a>
         <div className="subpicture">
           <div className="clearfix">
-            <a href={this.props.url} className="pull-right">{this.props.link}</a>
+            <a href={this.props.link} className="pull-right">{this.props.type}</a>
           </div>
-          <p>{this.props.text}</p>
+          <p>{this.props.name}</p>
         </div>
-        <div className="image" style={this.props.style}></div>
+        <div className="image" style={style}></div>
       </div>
     );
   }
 }
 
 Project.propTypes = {
-  content: React.PropTypes.object,
-  url: React.PropTypes.string,
+  name: React.PropTypes.string,
+  type: React.PropTypes.string,
   link: React.PropTypes.string,
-  text: React.PropTypes.node,
-  style: React.PropTypes.object
+  image: React.PropTypes.string,
+  description: React.PropTypes.string
 };
