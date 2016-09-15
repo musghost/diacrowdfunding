@@ -66,7 +66,7 @@ const platforms = [
     {
       name: "HipGive",
       text: "Smart Investments in Latino Communities Across the Americas",
-      link: "https://hipgive.org/",
+      link: "https://hipgive.org/es",
       image: "assets/platforms/platform12.png"
     },
     {
