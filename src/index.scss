@@ -731,7 +731,7 @@ footer {
     }
   }
 
-  input, textarea {
+  input, textarea, select {
     background: none;
     box-shadow: none;
     border: 0;
@@ -782,6 +782,31 @@ footer {
         color: $purple;
       }
     }
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  .small{
+    margin-top: -30px;
+    position: absolute;
+    top: 120%;
+    left: 5%;
+  }
+
+  select{
+    height: 63px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+  }
+
+  .uppercase{
+    text-transform: uppercase;
   }
 
   button {
