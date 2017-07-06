@@ -15,7 +15,7 @@ export class Header extends Component {
                 <span className="icon-bar"></span>
               </button>
               <Link to={'/'} className="navbar-brand">
-                <img src="assets/diacrowdfunding.png"/>
+                <img src="assets/diacrowdfundingg.png"/>
               </Link>
             </div>
 

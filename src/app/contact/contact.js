@@ -125,7 +125,7 @@ export class Contact extends Component {
                           </select>
                         </div>
                         <div className="col-sm-6">
-                          <input type="text" placeholder="CURP o RFC *" required onChange={this.handleSetIdentification} className="uppercase"/>
+                          <input type="text" placeholder="CURP o RFC *" required onChange={this.handleSetIdentification} className="uppercase" minLength="12" maxLength="18" pattern="[A-Za-z0-9]+"/>
                           <small className="small">Consulta tu <a href="https://consultas.curp.gob.mx/CurpSP/inicio2_2.jsp" target="_blank">CURP</a> o <a href="http://www.mi-rfc.com.mx/consulta-rfc-homoclave" target="_blank">RFC</a></small>
                         </div>
                       </div>
