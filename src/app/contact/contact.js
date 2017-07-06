@@ -109,10 +109,10 @@ export class Contact extends Component {
                     {this.state.submited ? (<div>
                       <div className="row">
                         <div className="col-sm-6">
-                          <input type="text" placeholder="Nombre *" required onChange={this.handleSetName}/>
+                          <input type="text" placeholder="Nombre *" required onChange={this.handleSetName} pattern="[A-Za-z]+"/>
                         </div>
                         <div className="col-sm-6">
-                          <input type="text" placeholder="Apellidos *" required onChange={this.handleSetLastName}/>
+                          <input type="text" placeholder="Apellidos *" required onChange={this.handleSetLastName} pattern="[A-Za-z]+"/>
                         </div>
                       </div>
                       <div className="row">
@@ -131,7 +131,7 @@ export class Contact extends Component {
                       </div>
                       <div className="row">
                         <div className="col-sm-6">
-                          <input type="text" placeholder="Empresa o Proyecto *" required onChange={this.handleSetBusiness}/>
+                          <input type="text" placeholder="Empresa o Proyecto" onChange={this.handleSetBusiness}/>
                         </div>
                         <div className="col-sm-6">
                           <input type="email" placeholder="E-Mail *" required onChange={this.handleSetEmail}/>
@@ -139,15 +139,15 @@ export class Contact extends Component {
                       </div>
                       <div className="row">
                         <div className="col-sm-6">
-                          <input type="number" placeholder="Teléfonos" required onChange={this.handleSetNumber}/>
+                          <input type="number" placeholder="Teléfonos *" required onChange={this.handleSetNumber}/>
                         </div>
                         <div className="col-sm-6">
-                          <input type="text" placeholder="Tópico" required onChange={this.handleSetTopic}/>
+                          <input type="text" placeholder="Tópico" onChange={this.handleSetTopic}/>
                         </div>
                       </div>
                       <div className="row">
                         <div className="col-sm-12">
-                          <textarea placeholder="Mensaje *" rows="10" required onChange={this.handleSetMessage}></textarea>
+                          <textarea placeholder="Mensaje" rows="10" onChange={this.handleSetMessage}></textarea>
                         </div>
                       </div>
                       <div className="text-center">
