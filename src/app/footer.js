@@ -13,10 +13,10 @@ export class Footer extends Component {
         <footer style={styles.footer} className="clearfix">
           <div className="row">
             <div className="col-md-1">
-              <a href="#" className="round-button">
+              <a href="https://www.facebook.com/diacrowdfunding/" target="_blanck" className="round-button">
                 <span className="fa fa-facebook"></span>
               </a>
-              <a href="#" className="round-button">
+              <a href="https://twitter.com/diacrowdfunding" target="_blanck" className="round-button">
                 <span className="fa fa-twitter"></span>
               </a>
               <a href="#" className="round-button">

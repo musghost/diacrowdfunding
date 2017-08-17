@@ -100,7 +100,7 @@ export class Contact extends Component {
       <div>
         <Header/>
         <div id="cases">
-          <h1 className="text-center">Contact</h1>
+          <h1 className="text-center">Regístrate</h1>
           <div className="upload contact">
             <div className="row">
               <div className="col-sm-6 instructions">
