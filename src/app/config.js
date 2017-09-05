@@ -1,3 +1,3 @@
 export default {
-  apiBase: 'http://localhost:3000/api'
+  apiBase: 'http://dia-api.mellow.online/api'
 };

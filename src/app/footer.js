@@ -13,10 +13,10 @@ export class Footer extends Component {
         <footer style={styles.footer} className="clearfix">
           <div className="row">
             <div className="col-md-1">
-              <a href="#" className="round-button">
+              <a href="https://www.facebook.com/diacrowdfunding/" target="_blanck" className="round-button">
                 <span className="fa fa-facebook"></span>
               </a>
-              <a href="#" className="round-button">
+              <a href="https://twitter.com/diacrowdfunding" target="_blanck" className="round-button">
                 <span className="fa fa-twitter"></span>
               </a>
               <a href="#" className="round-button">
@@ -26,7 +26,7 @@ export class Footer extends Component {
             <div className="col-md-11">
               <div className="text-right">
                 <h3>¡FORMA PARTE DE LA COMUNIDAD DE<br/>FONDEO COLECTIVO EN NUESTRO PAÍS!</h3>
-                <h4>ESTE 5 DE OCT. SE CELEBRARÁ EL “DÍA CROWDFUNDING”</h4>
+                <h4>ESTE 13 DE SEP. SE CELEBRARÁ EL “DÍA CROWDFUNDING”</h4>
                 <p>Evento en línea que invita a inversionistas y a<br/>
                   emprendedores a formar parte de la comunidad de<br/>
                 fondeo colectivo más grande de México.</p>

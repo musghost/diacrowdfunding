@@ -49,7 +49,7 @@ export class Home extends Component {
             </div>
             <div className="col-md-6">
               <h1>¡Forma parte de la<br/>comunidad de fondeo<br/>colectivo en nuestro país!</h1>
-              <h3>ESTE 5 DE OCT. SE CELEBRARÁ EL “DÍA CROWDFUNDING”</h3>
+              <h3>ESTE 13 DE SEP. SE CELEBRARÁ EL “DÍA CROWDFUNDING”</h3>
               <p>Evento en línea que invita a inversionistas y a emprendedores a formar parte de la comunidad de fondeo colectivo más grande de México.</p>
               <p>Por medio de donaciones o inversión, apoya desde hoy y hasta la fecha antes mencianada, a esos proyectos o campañas con los que tengas afinidad, o a aquellas causas de tu interés que estaremos compartiendo por este medio.</p>
               <div className="clearfix invest-buttons">

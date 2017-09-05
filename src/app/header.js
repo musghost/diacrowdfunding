@@ -15,7 +15,7 @@ export class Header extends Component {
                 <span className="icon-bar"></span>
               </button>
               <Link to={'/'} className="navbar-brand">
-                <img src="assets/diacrowdfunding.png"/>
+                <img src="assets/diacrowdfundingg.png"/>
               </Link>
             </div>
 
@@ -31,7 +31,7 @@ export class Header extends Component {
                   <Link to={'/upload'}>Sube un proyecto <span className="fa fa-angle-down"></span></Link>
                 </li>
                 <li>
-                  <Link to={'/contact'}>Contacto <span className="fa fa-angle-down"></span></Link>
+                  <Link to={'/contact'}>Regístrate <span className="fa fa-angle-down"></span></Link>
                 </li>
                 <li>
                   <Link to={'/training'}>Patrocinadores <span className="fa fa-angle-down"></span></Link>
