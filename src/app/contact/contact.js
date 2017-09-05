@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 import {Header} from './../header';
 import {Footer} from './../footer';
 import axios from 'axios';
+import DatePicker from 'react-datepicker';
+import moment from 'moment';
+
+import 'react-datepicker/dist/react-datepicker.css';
+
 
 const styles = {
   image: {
@@ -19,15 +24,26 @@ export class Contact extends Component {
       submited: true,
       name: '',
       email: '',
-      phone: '',
-      topic: '',
       message: '',
-      occupation: '',
-      business: '',
-      lastName: '',
-      identification: ''
+      estado: '',
+      number: 5511223344,
+      lastName: 'Random',
+      identification: 'Random',
+      business: 'Business',
+      birthdate: '',
+      startDate: moment()
     };
     this.handleOnSubmit = this.handleOnSubmit.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+   handleChange(date) {
+    this.setState({
+      startDate: date
+    });
+    this.setState({
+      birthdate: date._d}
+    );
   }
 
   handleOnSubmit(e) {
@@ -43,48 +59,31 @@ export class Contact extends Component {
   handleSetEmail = event => {
     this.setState({email: event.target.value});
   }
-  handleSetNumber = event => {
-    this.setState({number: event.target.value});
-  }
-  handleSetTopic = event => {
-    this.setState({topic: event.target.value});
-  }
   handleSetMessage = event => {
     this.setState({message: event.target.value});
   }
-  handleSetOccupation = event => {
-    this.setState({occupation: event.target.value});
-  }
-  handleSetBusiness = event => {
-    this.setState({business: event.target.value});
-  }
-  handleSetLastName = event => {
-    this.setState({lastName: event.target.value});
-  }
-  handleSetIdentification = event => {
-    this.setState({identification: event.target.value});
+  handleSetEstado = event => {
+    this.setState({estado: event.target.value});
   }
 
   handleSubmit = () => {
     console.log('entro');
     console.log(this.state.name);
     console.log(this.state.email);
-    console.log(this.state.number);
     console.log(this.state.topic);
     console.log(this.state.message);
-    console.log(this.state.occupation);
-    console.log(this.state.business);
+    console.log(this.state.estado);
+    console.log(this.state.birthdate);
     console.log(this.state.lastName);
     console.log(this.state.identification);
     axios.post('http://dia-api.mellow.online/api/Contacts', {
       name: this.state.name,
       email: this.state.email,
       number: this.state.number,
-      topic: this.state.topic,
+      topic: this.state.birthdate,
       message: this.state.message,
-      occupation: this.state.occupation,
+      occupation: this.state.estado,
       business: this.state.business,
-      lastName: this.state.lastName,
       identification: this.state.identification
     })
     .then(response => {
@@ -96,6 +95,7 @@ export class Contact extends Component {
   }
 
   render() {
+    console.log('Esta es la fecha de nacimiento: '+this.state.birthdate);
     return (
       <div>
         <Header/>
@@ -109,40 +109,63 @@ export class Contact extends Component {
                     {this.state.submited ? (<div>
                       <div className="row">
                         <div className="col-sm-6">
-                          <input type="text" placeholder="Nombre *" required onChange={this.handleSetName} pattern="[A-Za-z]+"/>
+                          <input type="text" placeholder="Nombre y apellidos *" required onChange={this.handleSetName} pattern="[A-Za-z]+"/>
                         </div>
-                        <div className="col-sm-6">
-                          <input type="text" placeholder="Apellidos *" required onChange={this.handleSetLastName} pattern="[A-Za-z]+"/>
+                        <div className="col-sm-6 dte__picker">
+                          <DatePicker
+                            selected={this.state.startDate}
+                            onChange={this.handleChange}
+                            locale="es-mx"
+                            placeholderText="Fecha de nacimiento" 
+                            showYearDropdown
+                            showMonthDropdown
+                            dateFormatCalendar="MMMM"
+                            scrollableYearDropdown
+                            yearDropdownItemNumber={100}
+                            />
+                          <small className="small">Fecha de nacimiento</small>
                         </div>
                       </div>
                       <div className="row">
                         <div className="col-sm-6">
-                          <select required onChange={this.handleSetOccupation}>
-                            <option value="ocupacion">Ocupación *</option>
-                            <option value="Estudiante">Estudiante</option>
-                            <option value="Empresario">Empresario</option>
-                            <option value="Emprendedor">Emprendedor</option>
+                          <select required onChange={this.handleSetEstado}>
+                            <option value="estado">Estado *</option>
+                            <option value="Aguascalientes">Aguascalientes</option>
+                            <option value="Baja_California">Baja California</option>
+                            <option value="Baja_California_Sur">Baja California Sur</option>
+                            <option value="Campeche">Campeche</option>
+                            <option value="Coahuila_de_Zaragoza">Coahuila de Zaragoza</option>
+                            <option value="Colima">Colima</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="Distrito_Federal">Distrito Federal</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                            <option value="Guerrero">Guerrero</option>
+                            <option value="Hidalgo">Hidalgo</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="Mexico">México</option>
+                            <option value="Michoacan de Ocampo">Michoacán de Ocampo</option>
+                            <option value="Morelos">Morelos</option>
+                            <option value="Nayarit">Nayarit</option>
+                            <option value="Nuevo_Leon">Nuevo León</option>
+                            <option value="Oaxaca">Oaxaca</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Queretaro">Querétaro</option>
+                            <option value="Quintana_Roo">Quintana Roo</option>
+                            <option value="San_Luis_Potosi">San Luis Potosí</option>
+                            <option value="Sinaloa">Sinaloa</option>
+                            <option value="Sonora">Sonora</option>
+                            <option value="Tabasco">Tabasco</option>
+                            <option value="Tamaulipas">Tamaulipas</option>
+                            <option value="Tlaxcala">Tlaxcala</option>
+                            <option value="Veracruz_de_Ignacio_de_la_Llave">Veracruz de Ignacio de la Llave</option>
+                            <option value="Yucatan">Yucatán</option>
+                            <option value="Zacatecas">Zacatecas</option>
                           </select>
                         </div>
                         <div className="col-sm-6">
-                          <input type="text" placeholder="CURP o RFC *" required onChange={this.handleSetIdentification} className="uppercase" minLength="12" maxLength="18" pattern="[A-Za-z0-9]+"/>
-                          <small className="small">Consulta tu <a href="https://consultas.curp.gob.mx/CurpSP/inicio2_2.jsp" target="_blank">CURP</a> o <a href="http://www.mi-rfc.com.mx/consulta-rfc-homoclave" target="_blank">RFC</a></small>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-sm-6">
-                          <input type="text" placeholder="Empresa o Proyecto" onChange={this.handleSetBusiness}/>
-                        </div>
-                        <div className="col-sm-6">
                           <input type="email" placeholder="E-Mail *" required onChange={this.handleSetEmail}/>
-                        </div>
-                      </div>
-                      <div className="row">
-                        <div className="col-sm-6">
-                          <input type="number" placeholder="Teléfonos *" required onChange={this.handleSetNumber}/>
-                        </div>
-                        <div className="col-sm-6">
-                          <input type="text" placeholder="Tópico" onChange={this.handleSetTopic}/>
                         </div>
                       </div>
                       <div className="row">
